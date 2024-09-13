@@ -1,0 +1,74 @@
+body {
+    background-color: #e0f7fa; /* Light blue background */
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.card {
+    width: 90%;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 20px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-label {
+    display: block;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: 1px solid #b0e0e6; /* Light blue border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f1faff; /* Light blue input background */
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #00bcd4; /* Light blue button */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0097a7; /* Darker shade of blue for hover */
+}
+
+.alert-info {
+    padding: 20px;
+    background-color: #b3e5fc; /* Light blue alert background */
+    color: #01579b; /* Dark blue text */
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: 20px;
+        margin: 10px;
+    }
+}

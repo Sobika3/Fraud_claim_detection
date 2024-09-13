@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fraud Detection</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="card">
+    <h1>Fraud Detection</h1>
+    <form method="post">
+      <div class="form-group">
+        <label for="amount" class="form-label">Amount:</label>
+        <input type="text" id="amount" name="Amount" class="form-control" required>
+      </div>
+
+      <div class="form-group">
+        <label for="gender" class="form-label">Gender (Male or Female):</label>
+        <input type="text" id="gender" name="Gender" class="form-control" required>
+      </div>
+
+      <div class="form-group">
+        <label for="age" class="form-label">Age:</label>
+        <input type="text" id="age" name="Age" class="form-control" required>
+      </div>
+
+      <div class="form-group">
+        <label for="isInternational" class="form-label">Is International (Yes or No):</label>
+        <input type="text" id="isInternational" name="IsInternational" class="form-control" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Check Fraud</button>
+    </form>
+
+    {% if result is not none %}
+      <div class="alert alert-info">
+        <h2>Prediction: {{ result }}</h2>
+      </div>
+    {% endif %}
+  </div>
+</body>
+</html>
